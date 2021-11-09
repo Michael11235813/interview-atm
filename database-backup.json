@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "myUserId",
+      "pin": 7302
+    },
+    {
+      "id": "myUserIdasdf",
+      "pin": 7352
+    }
+  ]
+}
