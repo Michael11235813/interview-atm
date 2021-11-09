@@ -6,8 +6,9 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get('pin')
-  changePin(@Query() query): string {
+  changePin(@Query() query): void {
     console.warn('changePin is called with oldPin: ', query);
-    return this.appService.getHello();
+    const { oldPin, newPin, userId } = query;
+    this.appService.changePin(oldPin, newPin, userId);
   }
 }
