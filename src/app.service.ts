@@ -10,12 +10,6 @@ export class AppService {
     // Start Coding here //
     // ////////////////////
 
-    const fs = require('fs');
-
-    let rawdata = fs.readFileSync(this.databaseFilePath);
-    let student = JSON.parse(rawdata);
-    console.log(student);
-
     this.logger.debug(
       `Received old pin="${oldPin}", new pin="${newPin}" and userId="${userId}".`,
     );
