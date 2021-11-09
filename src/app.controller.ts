@@ -7,7 +7,6 @@ export class AppController {
 
   @Get('pin')
   changePin(@Query() query): void {
-    console.warn('changePin is called with oldPin: ', query);
     const { oldPin, newPin, userId } = query;
     this.appService.changePin(oldPin, newPin, userId);
   }
